@@ -1,0 +1,66 @@
+POST http://localhost:7071/api/xml2xsd
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="id-f189c50dd88349d0a56620a53af599f3">
+  <name xml:lang="en">(new model)</name>
+  <elements>
+    <element identifier="id-0b6c63a5e60540acb7d34d7b33334aa3" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Application Component</name>
+    </element>
+    <element identifier="id-093b7691b2f4413da70fe99d29e0da5e" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Application Component</name>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-2ee0ad36f47147af98961e94906783c3" source="id-093b7691b2f4413da70fe99d29e0da5e" target="id-0b6c63a5e60540acb7d34d7b33334aa3" xsi:type="Triggering" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item identifierRef="id-0b6c63a5e60540acb7d34d7b33334aa3" />
+      <item identifierRef="id-093b7691b2f4413da70fe99d29e0da5e" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="id-2ee0ad36f47147af98961e94906783c3" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="id-171061ebc76547eba0f70383fafde265" />
+    </item>
+  </organizations>
+  <views>
+    <diagrams>
+      <view identifier="id-171061ebc76547eba0f70383fafde265" xsi:type="Diagram">
+        <name xml:lang="en">Default View</name>
+        <node identifier="id-c8249423aa774c5c8434a8ea7fb9f3d9" elementRef="id-0b6c63a5e60540acb7d34d7b33334aa3" xsi:type="Element" x="244" y="152" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-1cd0d54ff82e4ba2baf0e331b2682d47" elementRef="id-093b7691b2f4413da70fe99d29e0da5e" xsi:type="Element" x="527" y="391" w="120" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="id-d101243c6d8b45688bc8c3dcdfc1fd28" relationshipRef="id-2ee0ad36f47147af98961e94906783c3" xsi:type="Relationship" source="id-1cd0d54ff82e4ba2baf0e331b2682d47" target="id-c8249423aa774c5c8434a8ea7fb9f3d9">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>
