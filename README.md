@@ -16,6 +16,6 @@ To test the Azure Function locally, follow these steps:
 1. Clone the repository
 2. To test the project locally, execute the following command:
 ```shell
-func start --csharp --build
+func start --csharp
 ```
 3. Test : Rest client Ctrl+Alt+R on file example.rest
